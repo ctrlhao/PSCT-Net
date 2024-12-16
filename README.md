@@ -12,15 +12,15 @@ Bing Wang<sup>a,b</sup>,Hao Shi<sup>a</sup>,Zutong Zhao<sup>b</sup>,Shiyin Zhang
 ## Abstract
 Medical image segmentation’s accuracy is crucial for clinical analysis and diagnosis.CNN-Transformer based hybrid approaches
 show great potential in medical image segmentation due to their complementarity in modeling local and long-range contextual
-dependencies.However, local representations and global representations possess their own distinct structures and semantic characteristics, simplistic or inappropriate fusion strategies are insufficient to fully leverage their complementary strengths, making
+dependencies.However, local representations and global representations possess their own distinct structures and semantic characteristics, simplistic or inappropriate fusion strategies are insufficient to fully leverage their complementary strengths, making
 it difficult for the model to achieve optimal segmentation performance. In order to solve this dilemma, we proposed A Parallel
 Symmetric CNN-Transformer Hybrid Network for Medical Image Segmentation (PSCT-Net)that implements a three-phase fusion
 mechanism to fully exploit the complementary strengths of these architectures:1) During the encoding stage, we design a layer-wise
 feature fusion (LWFF) module efficiently merges local and global feature information from both CNN and Transformer, enabling the
 network to learn more discriminative multi-scale feature.2) For skip connections, we introduce a multi-scale feature fusion (MSFF)
-module to capture spatial and channel dependencies among features from different encoding stages while filtering redundant information through multi-scale feature spatial fusion (MFSF) and multi-scale feature channel fusion (MFCF).3) In the decoding stage,
+module to capture spatial and channel dependencies among features from different encoding stages while filtering redundant information through multi-scale feature spatial fusion (MFSF) and multi-scale feature channel fusion (MFCF).3) In the decoding stage,
 a dual-branch decoder leverages the features transmitted through skip connections, while the LWFF module further integrates the
-upsampled features at the same stage, allowing the network to more accurately restore image resolution.Comprehensive experiments on four medical datasets demonstrate the superiority, effectiveness, and robustness of our PSCT-Net.
+upsampled features at the same stage, allowing the network to more accurately restore image resolution.Comprehensive experiments on four medical datasets demonstrate the superiority, effectiveness, and robustness of our PSCT-Net.
 
 ## Overview
 
